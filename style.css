@@ -131,17 +131,6 @@ a {
     height: 3em;
 }
 
-.column .multiimage {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-}
-
-.column .multiimage * {
-    margin: 0.5em;
-}
-
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 750px) {
     .column {
