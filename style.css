@@ -1,0 +1,148 @@
+html {
+  scroll-behavior: smooth !important;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.header, .footer {
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.textcontent {
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.textcontent h2 {
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 203, 58);
+    font-size: 35pt;
+}
+
+.header h1 {
+    font-size: 100pt;
+    outline: none;
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-style: normal;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 203, 58);
+}
+
+.header h2 {
+    font-family: "Teko", sans-serif;
+    font-size: 35pt;
+    font-weight: 400;
+}
+
+.header h3, .footer h3  {
+    font-weight: 400;
+}
+
+.header h3 a {
+    color: white;
+
+}
+
+.header h3 a:hover {
+    color: rgb(255, 203, 58);
+}
+
+.bigbtn {
+    color: black;
+    background-color: rgb(255, 203, 58);
+    margin: 10px;
+    padding: 5pt;
+    height: fit-content;
+}
+
+.header button {
+    outline: none;
+    border: none;
+    color: black;
+    background-color: white;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0 4px;
+    justify-content: center; /* Center the columns */
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 8px;
+}
+
+.column * {
+    margin-top: 15px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.column > img {
+    pointer-events: none;
+    /* disables right-click select */
+    user-select: none;
+}
+
+.column > .space {
+    width: 100%;
+    height: 5em;
+}
+
+.emph {
+    color: rgb(255, 203, 58);
+}
+
+a {
+    color: rgb(255, 203, 58);
+    text-decoration: none;
+}
+
+.logos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logos img {
+    margin: 10px;
+    height: 3em;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 750px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .header {
+        line-height: 1;
+    }
+
+    .textcontent {
+        max-width: 90%;
+    }
+}
